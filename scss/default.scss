@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+html, body {
+
+  
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: #333;
+   
+
+}
+
+
+.auth-form-wrapper{
+    display: flex;
+    flex: 1;
+    background: rgb(244, 245, 247);
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: -1;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    &:before {
+      position: fixed;
+      display: none;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0,0,0,0);
+      content: "";
+      z-index: 0;
+    }
+}
+
+
+.sign-up-wrapper {
+  width: 520px;
+  height: auto;
+  background: rgb(255, 255, 255);
+  padding: 2.75rem;
+  border-radius: 3px;
+  box-shadow: 0 7px 14px 0 rgba(59, 65, 94, 0.1),
+    0 3px 6px 0 rgba(0, 0, 0, 0.07);
+}
+
+.sign-up-container {
+    width: 100%;
+    & input {
+      background: rgba(0,0,0,0) !important;
+    }
+    & .input-group {
+      background: rgba(214, 219, 230, 0.36) !important;
+      border-radius: 0.25rem;
+    }
+    & a {
+      color: lightblue;
+      text-decoration: none;
+    }
+}
