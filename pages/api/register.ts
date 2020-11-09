@@ -22,7 +22,10 @@ const register = async (req: NextApiRequest, res: NextApiResponse) => {
 
     const attributeList = [
         new CognitoUserAttribute({Name: "email", Value: req.body.email}),
-        new CognitoUserAttribute({Name: "custom:timestamp", Value: Date.now().toString()})
+       //uncomment the below line when your userpool is configured with creating a new custom attribute
+       // https://stackoverflow.com/questions/53475478/react-cognito-user-pool-a-client-attempted-to-write-unauthorized-attribute
+       // https://stackoverflow.com/questions/44013901/amazon-cognito-a-client-attempted-to-write-unauthorized-attribute
+       // new CognitoUserAttribute({Name: "custom:timestamp", Value: Date.now().toString()})
     ]
 
       return new Promise((resolve, reject) => {
